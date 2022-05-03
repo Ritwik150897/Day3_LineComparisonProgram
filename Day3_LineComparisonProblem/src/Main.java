@@ -20,12 +20,26 @@ public class Main {
         double length2 = Math.sqrt(sq3 + sq4);
         String l2 = Double.toString(length2);
 
+        System.out.println("X1: " + x1);
+        System.out.println("Y1: " + y1);
+        System.out.println("X2: " + x2);
+        System.out.println("Y2: " + y2);
+        System.out.println("length of line 1: " + length1);
+
         System.out.println("X3: " + x3);
         System.out.println("Y3: " + y3);
         System.out.println("X4: " + x4);
         System.out.println("Y4: " + y4);
         System.out.println("length of line 2: " + length2);
-        
+
         System.out.println("Are both lines equal: " + l1.equals(l2));
+
+        if(length1 > length2) {
+            System.out.println("Line 1 is Greater.");
+        } else if (length2 > length1) {
+            System.out.println("Line 2 is Greater.");
+        }else {
+            System.out.println("Both Lines are Equal");
+        }
     }
 }
